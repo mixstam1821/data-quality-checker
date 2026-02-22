@@ -1,0 +1,16 @@
+order_id,customer_id,amount,status,order_date,country
+1,101,250.50,completed,2024-01-15,Germany
+2,102,89.99,pending,2024-01-16,Greece
+3,103,1500.00,completed,2024-01-17,Germany
+4,101,45.00,cancelled,2024-01-18,Greece
+5,104,,completed,2024-01-19,Germany
+6,105,320.75,pending,2024-01-20,France
+7,106,99.99,completed,2024-01-21,Germany
+8,102,89.99,pending,2024-01-16,Greece
+9,107,750000.00,completed,2024-01-22,Germany
+10,108,180.25,completed,2024-01-23,Greece
+11,,95.00,completed,2024-01-24,France
+12,110,210.00,completed,2024-01-25,Germany
+13,111,55.50,pending,,Greece
+14,112,430.00,completed,2024-01-27,Germany
+15,113,125.75,cancelled,2024-01-28,France
