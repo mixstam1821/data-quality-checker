@@ -53,6 +53,7 @@ data-quality-checker/
 # Clone the repo
 git clone https://github.com/mixstam1821/data-quality-checker.git
 cd data-quality-checker
+mkdir -p reports
 
 java -version
 
