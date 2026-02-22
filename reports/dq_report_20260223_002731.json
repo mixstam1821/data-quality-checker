@@ -1,0 +1,161 @@
+{
+  "timestamp": "20260223_002731",
+  "row_count": 15,
+  "column_count": 6,
+  "checks": {
+    "nulls": [
+      {
+        "column": "order_id",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "status": "\u2705 PASS"
+      },
+      {
+        "column": "customer_id",
+        "null_count": 1,
+        "null_pct": 6.67,
+        "status": "\u274c FAIL"
+      },
+      {
+        "column": "amount",
+        "null_count": 1,
+        "null_pct": 6.67,
+        "status": "\u274c FAIL"
+      },
+      {
+        "column": "status",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "status": "\u2705 PASS"
+      },
+      {
+        "column": "order_date",
+        "null_count": 1,
+        "null_pct": 6.67,
+        "status": "\u274c FAIL"
+      },
+      {
+        "column": "country",
+        "null_count": 0,
+        "null_pct": 0.0,
+        "status": "\u2705 PASS"
+      }
+    ],
+    "duplicates": {
+      "check": "Duplicates (on columns ['order_id'])",
+      "total_rows": 15,
+      "distinct_rows": 15,
+      "duplicate_count": 0,
+      "duplicate_pct": 0.0,
+      "status": "\u2705 PASS"
+    },
+    "column_stats": [
+      {
+        "column": "order_id",
+        "type": "numeric",
+        "min": 1,
+        "max": 15,
+        "avg": 8.0,
+        "stddev": 4.47,
+        "distinct_count": 15
+      },
+      {
+        "column": "customer_id",
+        "type": "numeric",
+        "min": 101,
+        "max": 113,
+        "avg": 106.07,
+        "stddev": 4.18,
+        "distinct_count": 12
+      },
+      {
+        "column": "amount",
+        "type": "numeric",
+        "min": 45.0,
+        "max": 750000.0,
+        "avg": 53820.91,
+        "stddev": 200374.47,
+        "distinct_count": 13
+      },
+      {
+        "column": "status",
+        "type": "string",
+        "min_length": 7,
+        "max_length": 9,
+        "distinct_count": 3
+      },
+      {
+        "column": "order_date",
+        "type": "date",
+        "min_date": "2024-01-15",
+        "max_date": "2024-01-28",
+        "distinct_count": 13
+      },
+      {
+        "column": "country",
+        "type": "string",
+        "min_length": 6,
+        "max_length": 7,
+        "distinct_count": 3
+      }
+    ],
+    "outliers": [
+      {
+        "column": "order_id",
+        "mean": 8.0,
+        "stddev": 4.47,
+        "outlier_count": 0,
+        "threshold": "Z > 3.0",
+        "status": "\u2705 PASS"
+      },
+      {
+        "column": "customer_id",
+        "mean": 106.07,
+        "stddev": 4.18,
+        "outlier_count": 0,
+        "threshold": "Z > 3.0",
+        "status": "\u2705 PASS"
+      },
+      {
+        "column": "amount",
+        "mean": 53820.91,
+        "stddev": 200374.47,
+        "outlier_count": 1,
+        "threshold": "Z > 3.0",
+        "status": "\u26a0\ufe0f  WARN"
+      }
+    ],
+    "schema_validation": [
+      {
+        "column": "order_id",
+        "expected_type": "integer",
+        "actual_type": "int",
+        "status": "\u274c FAIL"
+      },
+      {
+        "column": "customer_id",
+        "expected_type": "integer",
+        "actual_type": "int",
+        "status": "\u274c FAIL"
+      },
+      {
+        "column": "amount",
+        "expected_type": "double",
+        "actual_type": "double",
+        "status": "\u2705 PASS"
+      },
+      {
+        "column": "status",
+        "expected_type": "string",
+        "actual_type": "string",
+        "status": "\u2705 PASS"
+      },
+      {
+        "column": "order_date",
+        "expected_type": "date",
+        "actual_type": "date",
+        "status": "\u2705 PASS"
+      }
+    ]
+  }
+}
